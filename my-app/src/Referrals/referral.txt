@@ -1,0 +1,2 @@
+*This Folder comprises of code templates which were developed for basic understanding before actual implementations.
+The Content of the folder is not used in the code directly*

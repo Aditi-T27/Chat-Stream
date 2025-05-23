@@ -1,0 +1,29 @@
+<!-- public/index.html -->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>QR Code Scanner</title>
+  <script src="https://unpkg.com/html5-qrcode"></script>
+</head>
+<body>
+  <h2>Scan a QR Code using Webcam</h2>
+  <div id="reader" style="width: 400px;"></div>
+  <p><strong>Scanned Result:</strong> <span id="result">None</span></p>
+
+  <script>
+    function onScanSuccess(decodedText, decodedResult) {
+      document.getElementById('result').innerText = decodedText;
+      console.log("Scanned Data: ", decodedText);
+      html5QrcodeScanner.clear(); // Stop scanning
+    }
+
+    const html5QrcodeScanner = new Html5QrcodeScanner(
+      "reader",
+      { fps: 10, qrbox: 250 },
+      false
+    );
+
+    html5QrcodeScanner.render(onScanSuccess);
+  </script>
+</body>
+</html>
