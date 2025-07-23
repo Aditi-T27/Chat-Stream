@@ -28,8 +28,6 @@ ChatStream is a privacy-first real-time chat application that blends simplicity,
 
 ## 🖼️ App Flow (Screenshots)
 
-> ⚠️ Replace the image links below with your actual screenshots (hosted or local)
-
 1. **Registration & Email Verification**
    ![Registration](./content/Screenshot1.png)
 
